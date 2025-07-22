@@ -17,7 +17,7 @@ const Profile = () => {
     const fetchUserData = async () => {
         try {
             const token = localStorage.getItem('userToken');
-            const response = await axios.get("http://localhost:8080/v1/current-user", {
+            const response = await axios.get("https://sandbox2025-1.onrender.com/v1/current-user", {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 }

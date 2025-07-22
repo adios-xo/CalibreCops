@@ -26,7 +26,7 @@ const Login = () => {
 
     const handleLogin = async (data) => {
         try {
-            const response = await axios.post("http://localhost:8080/v1/login", data);
+            const response = await axios.post("https://sandbox2025-1.onrender.com/v1/login", data);
             let curToken = response.data.token;
             localStorage.setItem('userToken', curToken);
             navigate('/home', { replace: true });

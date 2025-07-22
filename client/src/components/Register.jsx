@@ -17,7 +17,7 @@ const Register = () => {
 
     const handleRegister = async (data) => {
         try {
-            const response = await axios.post("http://localhost:8080/v1/register", data);
+            const response = await axios.post("https://sandbox2025-1.onrender.com/v1/register", data);
             if (response.data.success) {
                 localStorage.setItem("userToken", response.data.token);
                 navigate("/home", { replace: true });
