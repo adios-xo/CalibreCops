@@ -99,7 +99,10 @@ const App = () => {
         </div>
       </>
     },
-  ])
+  ],
+    {
+      basename: "/CalibreCops",
+    })
   return (
     <>
       <RouterProvider router={router} />
